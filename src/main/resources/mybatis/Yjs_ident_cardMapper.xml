@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swt.jxproject.mapper.Yjs_ident_cardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swt.jxproject.entity.Yjs_ident_card">
+        <id column="ic_id" property="ic_id" />
+        <result column="pts_id" property="pts_id" />
+        <result column="img_id" property="img_id" />
+        <result column="card_num" property="card_num" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="nation" property="nation" />
+        <result column="birth" property="birth" />
+        <result column="address" property="address" />
+        <result column="authority" property="authority" />
+        <result column="valid_date" property="valid_date" />
+        <result column="update_time" property="update_time" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+
+</mapper>

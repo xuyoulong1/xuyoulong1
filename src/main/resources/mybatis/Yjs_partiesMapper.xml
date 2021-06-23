@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swt.jxproject.mapper.Yjs_partiesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swt.jxproject.entity.Yjs_parties">
+        <id column="pts_id" property="pts_id" />
+        <result column="jq_id" property="jq_id" />
+        <result column="pts_name" property="pts_name" />
+        <result column="pts_phone" property="pts_phone" />
+        <result column="xc_image" property="xc_image" />
+        <result column="zj_image" property="zj_image" />
+        <result column="traffic" property="traffic" />
+        <result column="card_code" property="card_code" />
+        <result column="plate_no" property="plate_no" />
+        <result column="vehicle_type" property="vehicle_type" />
+        <result column="policy_name" property="policy_name" />
+        <result column="policy_no" property="policy_no" />
+        <result column="accid_duty" property="accid_duty" />
+        <result column="sign_image" property="sign_image" />
+        <result column="sign_date" property="sign_date" />
+        <result column="update_time" property="update_time" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+
+</mapper>

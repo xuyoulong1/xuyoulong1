@@ -1,0 +1,51 @@
+server:
+  port: 8888
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+spring:
+  servlet:
+    multipart:
+      max-file-size: 7MB
+      max-request-size: 7MB
+  application:
+    name: jxproject
+  profiles:
+    active: prod
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql:///jiaxing?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+
+  redis:
+    port: 6379
+    host: localhost
+    database: 0
+
+#mybatis-plus:
+#  type-aliases-package: com.swt.jxproject.entity
+mybatis-plus:
+  configuration:
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+  mapper-locations: classpath:mybatis/**/*Mapper.xml
+  type-aliases-package: com.swt.jxproject.entity
+  global-config:
+    refresh: true # 刷新xml文件
+    db-config:
+      logic-delete-value: 1 #默认值1
+      logic-not-delete-value: 0 #默认值0
+      #数据库类型
+  #      db-type: mysql
+
+
+jwt:
+  secret: 8FE20B2ABECA020EB37EC7EA1693ED31

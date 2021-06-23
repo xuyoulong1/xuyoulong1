@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swt.jxproject.mapper.Yjs_imageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swt.jxproject.entity.Yjs_image">
+        <id column="img_id" property="img_id" />
+        <result column="pts_id" property="pts_id" />
+        <result column="img_type" property="img_type" />
+        <result column="img_name" property="img_name" />
+        <result column="flag" property="flag" />
+        <result column="update_time" property="update_time" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+
+</mapper>

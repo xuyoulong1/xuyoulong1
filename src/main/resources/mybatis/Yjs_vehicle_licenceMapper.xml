@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swt.jxproject.mapper.Yjs_vehicle_licenceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swt.jxproject.entity.Yjs_vehicle_licence">
+        <id column="vl_id" property="vl_id" />
+        <result column="pts_id" property="pts_id" />
+        <result column="img_id" property="img_id" />
+        <result column="plate_no" property="plate_no" />
+        <result column="vehicle_type" property="vehicle_type" />
+        <result column="owner" property="owner" />
+        <result column="address" property="address" />
+        <result column="use_character" property="use_character" />
+        <result column="model" property="model" />
+        <result column="vin" property="vin" />
+        <result column="engine_no" property="engine_no" />
+        <result column="register_date" property="register_date" />
+        <result column="issue_date" property="issue_date" />
+        <result column="seal" property="seal" />
+        <result column="file_no" property="file_no" />
+        <result column="allow_num" property="allow_num" />
+        <result column="total_mass" property="total_mass" />
+        <result column="curb_weight" property="curb_weight" />
+        <result column="load_quality" property="load_quality" />
+        <result column="external_size" property="external_size" />
+        <result column="marks" property="marks" />
+        <result column="record" property="record" />
+        <result column="total_mass_norm" property="total_mass_norm" />
+    </resultMap>
+
+</mapper>
